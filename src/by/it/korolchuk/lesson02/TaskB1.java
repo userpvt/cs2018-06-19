@@ -23,8 +23,9 @@ import java.util.Scanner;
 
 class TaskB1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner (System.in);
-        int i=scanner.nextInt();
+        Scanner s = new Scanner (System.in);
+        System.out.println("Введите число");
+        int i = s.nextInt();
         System.out.println(i*i);
     }
 }
