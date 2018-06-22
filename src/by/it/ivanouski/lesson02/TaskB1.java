@@ -23,8 +23,8 @@ import java.util.Scanner;
 
 class TaskB1 {
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
-        int i=scan.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
         System.out.println(i*i);
     }
 }
