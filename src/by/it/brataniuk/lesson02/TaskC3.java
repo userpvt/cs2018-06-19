@@ -1,5 +1,9 @@
 package by.it.brataniuk.lesson02;
 
+import java.io.PrintStream;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -30,5 +34,12 @@ package by.it.brataniuk.lesson02;
 
 */
 class TaskC3 {
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Double weight = sc.nextDouble();
+        double mars = 3.86;
+        double earth = 9.81;
+        double manonmars = weight / earth * mars;
+        System.out.println(manonmars);
+    }
 }
