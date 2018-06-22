@@ -32,19 +32,19 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
-//    public static void main(String[] args) {
-//        double ge = 9.81;
-//        double gm = 3.86;
-//        Scanner scanner = new Scanner(System.in);
-//        int weight = scanner.nextInt();
-//        double w = getWeight(weight)
-//        public static double getWeight(int weight){
-//            double w = weight * gm / ge;
-//            w = w * 100;
-//            int u = (int) Math.round(w);
-//            w = (double) u / 100;
-//            return w;
-//        }
-//        System.out.println(w);
-//    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int weight = scanner.nextInt();
+        double r = getWeight(weight);
+        System.out.println(r);
+    }
+    public static double getWeight(int weight){
+        double ge = 9.81;
+        double gm = 3.86;
+        double w = weight * gm / ge;
+        w = w * 100;
+        int u = (int) Math.round(w);
+        w = (double) u / 100;
+        return w;
+    }
 }
