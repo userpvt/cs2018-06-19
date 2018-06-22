@@ -26,6 +26,4 @@ class TaskC2 {
         System.out.println("OCT" + ":" + (Integer.toOctalString(i1)) + "+" + (Integer.toOctalString(i2)) + "=" + (Integer.toOctalString(i1+i2)));
 
     }
-
-
 }

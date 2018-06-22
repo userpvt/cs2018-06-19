@@ -26,4 +26,5 @@ class TaskB2 {
 
         System.out.println(result);
     }
+
 }
