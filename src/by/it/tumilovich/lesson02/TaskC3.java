@@ -41,7 +41,7 @@ class TaskC3 {
 
     }
 
-    private static double getWeight(int w1){
+    public static double getWeight(int w1){
         double gMars = 3.86;
         double gEarth = 9.81;
         return Math.rint(w1*gMars*100/gEarth)/100;
