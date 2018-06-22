@@ -38,7 +38,7 @@ class TaskC3 {
         Scanner scanner=new Scanner(System.in);
         int weight1=scanner.nextInt();
         double weight2=getWeight(weight1);
-        System.out.print("Вес человека на Марсе: ");
+        System.out.print("Вес человека на Марсе (в кг): ");
         System.out.println(weight2);
 
     }
