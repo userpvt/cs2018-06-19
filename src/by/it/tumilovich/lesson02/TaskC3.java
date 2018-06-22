@@ -34,9 +34,11 @@ import java.lang.Math;
 */
 class TaskC3 {
     public static void main(String[] args) {
+        System.out.print("Введите вес человека на Земле (в кг): ");
         Scanner scanner=new Scanner(System.in);
         int weight1=scanner.nextInt();
         double weight2=getWeight(weight1);
+        System.out.print("Вес человека на Марсе: ");
         System.out.println(weight2);
 
     }
