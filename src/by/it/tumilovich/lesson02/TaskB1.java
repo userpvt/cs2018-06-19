@@ -23,8 +23,9 @@ import java.util.Scanner;
 
 class TaskB1 {
     public static void main(String[] args) {
+        System.out.println("Напишите любое число, и я верну вам его квадрат! :)");
         Scanner scanner=new Scanner(System.in);
         int i=scanner.nextInt();
-        System.out.println(i*i);
+        System.out.println("Квадрат вашего числа = " + i*i);
     }
 }
