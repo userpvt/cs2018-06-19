@@ -1,5 +1,8 @@
 package by.it.tumilovich.lesson02;
 
+import java.util.Scanner;
+import java.lang.Math;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -30,5 +33,18 @@ package by.it.tumilovich.lesson02;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        System.out.print("Введите вес человека на Земле (в кг): ");
+        Scanner scanner=new Scanner(System.in);
+        int weight1=scanner.nextInt();
+        double weight2=getWeight(weight1);
+        System.out.println("Вес человека на Марсе: " + weight2);
 
+    }
+
+    private static double getWeight(int w1){
+        double gMars = 3.86;
+        double gEarth = 9.81;
+        return Math.rint(w1*gMars*100/gEarth)/100;
+    }
 }
