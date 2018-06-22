@@ -2,6 +2,7 @@ package by.it.korolchuk.lesson02;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Locale;
 import java.util.Scanner;
 
 /*
@@ -35,20 +36,14 @@ import java.util.Scanner;
 */
 class TaskC3 {
     public static void main(String[] args) {
-        System.out.println(getWeight());
+        Scanner in = new Scanner (System.in);
+        int weight = in.nextInt();
+        System.out.format(Locale.ENGLISH, "%.2f%n", getWeight(weight));
     }
+    public static double getWeight (int weight){
 
-        public static double getWeight(int weight) {
-
-        Scanner zp = new Scanner(System.in);
-        double zg = 9.81;
-        double zm = 3.86;
-        double pm = zp/zg*zm;
-
-
-        double newDouble = new BigDecimal(pm).setScale(2, RoundingMode.UP).doubleValue();
-
-
-        return newDouble;
-    }
-}
+        double eg = 9.81;
+        double mg = 3.86;
+        double res = (mg / eg) * (double) weight;
+        return Math.round(res * 100) / (double) 100;
+    }}

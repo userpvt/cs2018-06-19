@@ -20,4 +20,5 @@ class TaskC1 {
             int i2= s.nextInt();
             System.out.println("Sum" +" " + "=" + " " + (i1 + i2));
         }
+
     }
