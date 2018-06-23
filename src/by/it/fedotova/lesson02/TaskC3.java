@@ -38,25 +38,42 @@ import java.util.Scanner;
 */
 class TaskC3 {
 
-       public static void main(String[] args) {
-            Scanner in = new Scanner(System.in);
-            int k = in.nextInt();
-           System.out.println(getWeight(k));
-        }
+    //   public static void main(String[] args) {
+      //      Scanner in = new Scanner(System.in);
+     //       int k = in.nextInt();
+   //        System.out.println(getWeight(k));
+     //   }
 
-        public static double getWeight(double weight) {
+   //     public static double getWeight(double weight) {
 
-            double z = 9.81;
-            double y = 3.86;
-            double n = y * 100.0 / z;
-            double k = n / 100.0 * weight;
+   //         double z = 9.81;
+   //         double y = 3.86;
+  //          double n = y * 100.0 / z;
+  //          double k = n / 100.0 * weight;
 
-            double newDouble = new BigDecimal(k).setScale(2, RoundingMode.UP).doubleValue();
+ //           double newDouble = new BigDecimal(k).setScale(2, RoundingMode.UP).doubleValue();
 
-            return newDouble;
+  //          return newDouble;
 
-        }
+   //     }
 
-}
+//}
 //s = (int) i*100
 ///d = i * 100.0 - s
+          static double getWeight(int weight) {
+              double v = weight * 3.86 / 9.81;
+          //    int iw100=(int) v * 100;
+              double dw100=v * 100;
+              int iw100 =(int) dw100;
+              double delta=dw100-iw100;
+              if (delta >= 0.5)
+                  iw100++;
+              return Math.round(v * 100 / 100.0);
+          }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int we = scanner.nextInt();
+        double res = getWeight(we);
+        System.out.println(res);
+    }
+    }
