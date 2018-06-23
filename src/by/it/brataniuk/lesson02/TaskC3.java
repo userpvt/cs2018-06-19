@@ -36,15 +36,13 @@ import java.util.Scanner;
 class TaskC3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Double weight1 = sc.nextDouble();
-    System.out.println(weight1);}
+        int we = sc.nextInt();
+        double res=getWeight(we);
+    System.out.println(res);}
 
-
-    public static getWeight(int weight) {
-        double mars = 3.86;
-        double earth = 9.81;
-        double
-        return (Math.rint( * 100) / 100);
+    static double getWeight(int weight) {
+         double v = weight*3.86/9.81;
+         return Math.round(v*100)/100.0;
     }
 }
 
