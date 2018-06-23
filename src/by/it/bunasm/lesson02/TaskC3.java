@@ -30,9 +30,5 @@ package by.it.bunasm.lesson02;
 
 */
 class TaskC3 {
-        public static void getWeight(int weight) {
-            int m = 63;
-            double h;
-            h = 3.81;
-        }
+
 }
