@@ -24,7 +24,7 @@ class TaskC2 {
         int j = in.nextInt();
         int k = i+j;
 
-        System.out.println("Dec:" + i + "+" + j + "=" + k);
+        System.out.println("DEC:" + i + "+" + j + "=" + k);
         String ci = Integer.toBinaryString (i);
         String cj = Integer.toBinaryString (j);
         String ck = Integer.toBinaryString (k);
