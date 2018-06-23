@@ -58,3 +58,5 @@ class TaskC3 {
         }
 
 }
+//s = (int) i*100
+///d = i * 100.0 - s
