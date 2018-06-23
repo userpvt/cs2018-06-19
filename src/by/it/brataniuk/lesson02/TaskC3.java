@@ -36,10 +36,15 @@ import java.util.Scanner;
 class TaskC3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Double weight = sc.nextDouble();
+        Double weight1 = sc.nextDouble();
+    System.out.println(weight1);}
+
+
+    public static getWeight(int weight) {
         double mars = 3.86;
         double earth = 9.81;
-        double manonmars = weight / earth * mars;
-        System.out.println(manonmars);
+        double
+        return (Math.rint( * 100) / 100);
     }
 }
+
