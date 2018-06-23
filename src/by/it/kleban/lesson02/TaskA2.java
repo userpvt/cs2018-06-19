@@ -10,7 +10,7 @@ package by.it.kleban.lesson02;
 
 class TaskA2 {
 
-    public static String TEXT = "Я начинаю изучать джава";
+    public static String TEXT = "Я начинаю изучать Java!";
 
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++)
