@@ -35,23 +35,21 @@ import static java.lang.Math.*;
 
 */
 class TaskC3 {
-    final static double gm = 3.86;
-
+     static double getWeight(int weight) {
+         double v = weight * 3.66 / 9.81;
+         double dw100 = v * 100;
+         int iw100 =(int) dw100;
+         double delta = dw100-iw100;
+            if (delta >=0/5)
+                iw100++;
+         return iw100/100.0;
+     }
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ввод");
-        int m = in.nextInt();
-        double r = getWeight(m);
-        System.out.println("Вывод" + r);
-
-
-
-    }
-
-    public static double getWeight(int weight) {
-        double r = weight * gm;
-        r = Math.round(r * 100) / 100.0;
-        return r;
+        int we = sc.nextInt();
+        double res = getWeight(we);
+        System.out.println(res);
 
     }
 }
