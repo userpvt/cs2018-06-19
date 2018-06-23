@@ -29,6 +29,20 @@ package by.it.shcharbakou.lesson02;
 
 
 */
+import java.util.Scanner;
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Your weight on Earth (kg):");
+        int weight = in.nextInt();
+    }
 
+    public static double getWeight(int weight) {
+
+        double x = weight;
+        double weightM = x * (3.86 / 9.81);
+
+        return weightM;
+
+    }
 }
