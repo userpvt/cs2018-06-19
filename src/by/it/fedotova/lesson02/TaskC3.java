@@ -41,6 +41,7 @@ class TaskC3 {
        public static void main(String[] args) {
             Scanner in = new Scanner(System.in);
             int k = in.nextInt();
+           System.out.println(getWeight(k));
         }
 
         public static double getWeight(double weight) {
