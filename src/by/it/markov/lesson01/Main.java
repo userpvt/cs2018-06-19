@@ -10,7 +10,8 @@ public class Main {
                 String hex = Integer.toHexString(i * (-1));
                 String octal = Integer.toOctalString(i * (-1));
                 System.out.printf("%8s %8d %8s %8s %n", binary, i, "-" + hex, "-" + octal);
-            } else {
+            }
+            else {
                 String hex = Integer.toHexString(i);
                 String octal = Integer.toOctalString(i);
                 System.out.printf("%8s %8d %8s %8s %n", binary, i, hex, octal);

@@ -39,9 +39,7 @@ class TaskC3 {
         System.out.println(r);
     }
     public static double getWeight(int weight){
-        double ge = 9.81;
-        double gm = 3.86;
-        double w = weight * gm / ge;
+        double w = weight * 3.86 / 9.81;
         w = w * 100;
         int u = (int) Math.round(w);
         w = (double) u / 100;
