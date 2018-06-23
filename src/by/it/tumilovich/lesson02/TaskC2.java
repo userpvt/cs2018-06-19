@@ -22,22 +22,10 @@ class TaskC2 {
         int number1=scanner.nextInt();
         int number2=scanner.nextInt();
         int sum= number1 + number2;
-        String binNumber1=Integer.toBinaryString(number1);
-        String binNumber2=Integer.toBinaryString(number2);
-        String binSum=Integer.toBinaryString(sum);
-        String hexNumber1=Integer.toHexString(number1);
-        String hexNumber2=Integer.toHexString(number2);
-        String hexSum=Integer.toHexString(sum);
-        String octNumber1=Integer.toOctalString(number1);
-        String octNumber2=Integer.toOctalString(number2);
-        String octSum=Integer.toOctalString(sum);
         System.out.println("DEC:" + number1 + "+" + number2 + "=" + sum);
-        System.out.println("BIN:" + binNumber1 + "+" + binNumber2 + "=" + binSum);
-        System.out.println("HEX:" + hexNumber1 + "+" + hexNumber2 + "=" + hexSum);
-        System.out.println("OCT:" + octNumber1 + "+" + octNumber2 + "=" + octSum);
-
-
-
+        System.out.println("BIN:" + Integer.toBinaryString(number1) + "+" + Integer.toBinaryString(number2) + "=" + Integer.toBinaryString(sum));
+        System.out.println("HEX:" + Integer.toHexString(number1) + "+" + Integer.toHexString(number2) + "=" + Integer.toHexString(sum));
+        System.out.println("OCT:" + Integer.toOctalString(number1) + "+" + Integer.toOctalString(number2) + "=" + Integer.toOctalString(sum));
     }
 
 }
