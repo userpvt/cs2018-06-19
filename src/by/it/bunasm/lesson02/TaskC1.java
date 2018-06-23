@@ -10,9 +10,12 @@ package by.it.bunasm.lesson02;
 Sum = 26
 */
 class TaskC1 {
-
-
-
-
-
-}
+    public static void main(String[] args) {
+        System.out.print("34");
+        System.out.print(" ");
+        System.out.println("26");
+        int sum = 20 + 6;
+        System.out.print ("Sum = ");
+        System.out.print (sum);
+    }
+    }
