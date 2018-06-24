@@ -1,6 +1,6 @@
 package by.it.loiko.lesson03;
 
-import java.util.Scanner;
+
 
 /*
     Сумма цифр четырехзначного числа
@@ -36,8 +36,7 @@ public class TaskC2 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+
         System.out.println(sumDigitsInNumber(5467));
     }
 

@@ -1,5 +1,5 @@
 package by.it.loiko.lesson03;
-import java.util.Scanner;
+
 /*
 Lesson 03. Конвертер температуры
 
@@ -33,8 +33,7 @@ class TaskC1 {
    }
 
    public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-       int tc = sc.nextInt();
+
 
        System.out.println(convertCelsiumToFahrenheit(40));
    }
