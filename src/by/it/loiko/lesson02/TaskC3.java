@@ -32,16 +32,16 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
-    static double getWeight(int waight) {
+    static double getWeight(int weight) {
         double a = 3.86;
         double b = 9.81;
-        double v = waight*a/b;
-        double dw100 = v*100;
-        int iw100 = (int) dw100;
-        double delta = dw100-iw100;
+        double v = weight*a/b; //29,5107
+        double dw100 = v*100; //2951,07
+        int iw100 = (int) dw100; // 2951
+        double delta = dw100-iw100; //0.07
         if (delta >= 0.5)
-            iw100++;
-        return iw100/100;
+            iw100++;//2951
+        return (double) iw100/100;
 
     }
 
