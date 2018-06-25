@@ -23,15 +23,16 @@ TC = (TF – 32) * 5/9
 4. Метод convertCelsiumToFahrenheit должен правильно переводить градусы Цельсия
 в градусы Фаренгейта и возвращать это число.*/
 
+import java.util.Scanner;
 
 class TaskC1 {
 
+    public static void main(String[] args) {
+        System.out.println(convertCelsiumToFahrenheit(40));
+    }
 
-
-
-
-//    public static void main(String[] args) {
-//        System.out.println(convertCelsiumToFahrenheit(40));
-//    }
-
+    public static double convertCelsiumToFahrenheit(int a) {
+        double faren = (9.0/5.0 * a) + 32;
+        return faren;
+    }
 }

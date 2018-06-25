@@ -22,4 +22,17 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
 
+    public static void main(String[] args) {
+        String q="Мое любимое стихотворение:";
+        String a="И ты пришел ко мне, как бы звездой ведом,";
+        String b="По осени трагической ступая,";
+        String c="В тот навсегда опустошенный дом,";
+        String d="Откуда унеслась стихов сожженных стая.";
+        System.out.println(q);
+        System.out.println(a+"\n"+b+"\n"+c+"\n"+d);
+
+    }
+
+
+
 }

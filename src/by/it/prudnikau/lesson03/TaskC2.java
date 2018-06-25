@@ -1,4 +1,5 @@
 package by.it.prudnikau.lesson03;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -22,10 +23,19 @@ package by.it.prudnikau.lesson03;
 public class TaskC2 {
 
 
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(5467));
+    }
 
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
-
+    public static int sumDigitsInNumber(int number) {
+        int q,a1,s,b,d,u,result;
+        q = number / 1000;//тысячи
+        a1 = number % 1000;
+        s = a1 / 100;//сотни
+        b = a1 % 100;
+        d = b / 10;//десятки
+        u = b % 10;//единица
+        result=q+s+d+u;
+        return result;
+    }
 }
