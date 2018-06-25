@@ -14,8 +14,9 @@ Sum = 26
 class TaskC1 {
         public static void main(String[] args) {
         Scanner sc=new Scanner (System.in);
-            int i = sc.nextInt(34);
-            int j = sc.nextInt(26);
-            System.out.println("Sum = 26");
+            int i = sc.nextInt ();
+            int j = sc.nextInt();
+            int sum = i+j;
+            System.out.println("Sum = " + sum);
     }
     }
