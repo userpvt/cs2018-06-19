@@ -20,6 +20,7 @@ package by.it.fedotova.lesson03;
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
 public class TaskC2 {
+
     static int sumDigitsInNumber(int i) {
         int a = i / 100;
         int b = i / 1000;
@@ -31,10 +32,8 @@ public class TaskC2 {
         int d10 = d * 10;
         int g = i - d10;
         int sum = b + newa + newd + g;
-
         return sum;
     }
-
    public static void main(String[] args) {
        System.out.println(sumDigitsInNumber(5467));
    }
