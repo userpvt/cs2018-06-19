@@ -29,6 +29,21 @@ package by.it.bunasm.lesson02;
 
 
 */
-class TaskC3 {
+/*class TaskC3 {
+    static double getWeight(int weight){
+        double v = weight * 3.86 / 9.81;
+        int w100= (int) dw100;
+        double delta=dw100-iw100;
+        if (delta>=0.5)
+            iw100++;
+        return iw100 / 100.0;
+    }
 
-}
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (Systen.in);
+        int we = sc.nextInt ();
+        double res=getweight(we);
+        System.out.println(res);
+    }
+
+} */

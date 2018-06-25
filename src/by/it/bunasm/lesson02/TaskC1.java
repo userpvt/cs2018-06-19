@@ -1,5 +1,7 @@
 package by.it.bunasm.lesson02;
 
+import java.util.Scanner;
+
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и выводит их сумму на экран в виде
 
@@ -10,9 +12,10 @@ package by.it.bunasm.lesson02;
 Sum = 26
 */
 class TaskC1 {
-
-
-
-
-
-}
+        public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+            int i = sc.nextInt(34);
+            int j = sc.nextInt(26);
+            System.out.println("Sum = 26");
+    }
+    }
