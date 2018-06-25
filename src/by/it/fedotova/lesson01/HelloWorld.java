@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson01;
+package by.it.fedotova.lesson01;
 
 public class HelloWorld {
     public static void main(String[] args) {

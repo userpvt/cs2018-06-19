@@ -2,7 +2,7 @@ package by.it._examples_.demo03;
 
 public class Literals {
     public static void main(String[] args) {
-        int i=12;
+        int i= 12;
         int h=0x12;
         int b=0b110;
         int o=012;

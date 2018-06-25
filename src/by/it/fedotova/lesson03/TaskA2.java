@@ -22,14 +22,10 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-       String a = "Перешагни, перескочи,";
+        String a = "Перешагни, перескочи,";
         String b = "Перелети, пере- что хочешь —";
         String c ="Но вырвись: камнем из пращи,";
-                String d =  "Звездой, сорвавшейся в ночи…";
-       // String a = "Сам затерял — теперь ищи…;";
-        System.out.println("Мое любимое стихотворение:");
-        System.out.println(a+"\n");
-
+        String d =  "Звездой, сорвавшейся в ночи…";
+        System.out.println("Мое любимое стихотворение:" + "\n" + a + "\n" + b + "\n" + c + "\n" + d);
     }
-
 }
