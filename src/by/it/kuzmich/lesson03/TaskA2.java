@@ -22,7 +22,7 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        String a="123"; String b="456"; String c="789"; String d="000";
+        String a="12555 154161 161561"; String b="45 5464 4564 5646"; String c="7894 6545 649"; String d="65 140 656000";
         System.out.println("Мое любимое стихотворение:");
         System.out.println(a+"\n"+b+"\n"+c+"\n"+d+"\n");
     }

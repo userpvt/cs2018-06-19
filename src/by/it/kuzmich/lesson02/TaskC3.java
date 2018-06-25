@@ -29,6 +29,24 @@ package by.it.kuzmich.lesson02;
 
 
 */
+
+import java.util.Scanner;
+
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        System.out.println(getWeight(i));
+    }
+        static double getWeight(int i) {
+        int a;
+        double b;
+        b = i / 9.81 * 3.86;
+        b*=100;
+        a = (int) Math.round(b);
+        b = (double) a/100;
+        return b;
+    }
 
 }
+
