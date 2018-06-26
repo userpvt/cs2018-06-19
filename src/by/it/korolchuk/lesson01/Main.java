@@ -1,12 +1,9 @@
-package by.it._tasks_.lesson01;
+package by.it.korolchuk.lesson01;
 
 public class Main {
     public static void main(String[] args) {
 
-        byte i = 0;
-
-        do {
-
+        for (byte i=Byte.MIN_VALUE; i<=Byte.MAX_VALUE; i++) {
 
             String binary = Integer.toBinaryString(i);
             if (binary.length() > 8) binary = binary.substring(binary.length() - 8);
@@ -22,9 +19,13 @@ public class Main {
 
             System.out.printf("%8s %n", binary + "\t" + octal + "\t" + hex + "\t" + i);
 
-            i++;
+                if (i==Byte.MAX_VALUE)
+                {
+                    break;
+                }
+
+
         }
-        while ((i>=-128)&&(i<=127));
 
     }
 
