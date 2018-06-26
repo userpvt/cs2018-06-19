@@ -23,6 +23,37 @@ package by.it.markov.lesson04;
 десять умножить на десять равно сто
 */
 
-public class TaskC3 {
-
-}
+// public class TaskC3 {
+//    public static void main(String[] args) {
+//
+//    }
+//    public static String printInt(int X) {
+//        String month1;
+//        switch (X) {
+//            case 2: month1 = "два"; break;
+//            case 3: month1 = "три"; break;
+//            case 4: month1 = "четыре"; break;
+//            case 5: month1 = "пять"; break;
+//            case 6: month1 = "шесть"; break;
+//            case 7: month1 = "семь"; break;
+//            case 8: month1 = "восем"; break;
+//            case 9: month1 = "девять";
+//                break;
+//            case 10: month1 = "десять";
+//                break;
+//            case 9: month1 = "сентябрь";
+//                break;
+//            case 10: month1 = "октябрь";
+//                break;
+//            case 11:month1 = "ноябрь";
+//                break;
+//            case 12: month1 = "декабрь";
+//                break;
+//            case 13: month1 = "месяц 13";
+//              break;
+//          default: month1 = "м/яц 14";
+//              break;
+//      }
+//   /  return month1;
+   //
+//

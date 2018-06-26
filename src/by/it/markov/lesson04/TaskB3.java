@@ -25,7 +25,19 @@ package by.it.markov.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int sum = 0;
+        int plus = 1;
+        while (sum <= (x - plus)) {
+            sum += plus;
+            plus++;
+            System.out.print(sum + ",");
+        }
+    }
 
 }
