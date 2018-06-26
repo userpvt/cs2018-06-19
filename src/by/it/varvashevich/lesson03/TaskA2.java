@@ -1,6 +1,6 @@
 package by.it.varvashevich.lesson03;
 
-import java.sql.SQLOutput;
+
 
 /*
 Lesson 03. Task A2. Стихотворение
@@ -24,11 +24,11 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        String a = "Как-то раз зимой";
-        String b = "Я быстро шел домой";
-        String c = "Но льда я не заметил";
-        String d = "И бедненький упал";
-        System.out.println("Мое любимое стихотворение");
+        String a = "За все, за все тебя благодарю я:";
+        String b = "За тайные мучения страстей,";
+        String c = "За горечь слез, отраву поцелуя";
+        String d = "За месть врагов и клевету друзей;";
+        System.out.println(" Мое любимое стихотворение:");
         System.out.println(a+"\n"+b+"\n"+c+"\n"+d+"\n");
 
     }
