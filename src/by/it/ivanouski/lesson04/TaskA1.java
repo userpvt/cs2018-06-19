@@ -25,5 +25,7 @@ package by.it.ivanouski.lesson04;
 
  */
 public class TaskA1 {
-
+    public static void main(String[] args) {
+        
+    }
 }
