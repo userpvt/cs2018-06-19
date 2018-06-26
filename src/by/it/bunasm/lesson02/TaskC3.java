@@ -1,5 +1,7 @@
 package by.it.bunasm.lesson02;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -40,10 +42,10 @@ package by.it.bunasm.lesson02;
     }
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner (Systen.in);
+        Scanner sc=new Scanner (System.in);
         int we = sc.nextInt ();
         double res=getweight(we);
         System.out.println(res);
     }
 
-} */
+}*/
