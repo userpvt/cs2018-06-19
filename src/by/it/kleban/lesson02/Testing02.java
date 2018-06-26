@@ -146,7 +146,7 @@ public class Testing02 {
     //    }
     private String className;
     Class<?> aClass;
-    //Основной конструктор тестов
+    //Основной конструктор тестовlesson04
     private Testing02(String className, String in) {
         //this.className = className;
         aClass = null;
