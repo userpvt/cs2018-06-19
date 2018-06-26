@@ -1,4 +1,4 @@
-package by.it.pronovich.lesson02;
+﻿package by.it.pronovich.lesson02;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -37,20 +37,16 @@ class TaskC3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
-       // System.out.println("Ввод:");
-       // System.out.println(i);
-       // System.out.println("Вывод:");
         System.out.println(getWeight(i));
-
-
     }
 
-    public static double getWeight(int veight) {
+     static double getWeight(int veight) {
         double a = 3.86;
         double b = 9.81;
         double c = a / b;
         double d = veight * c;
         double newDouble = new BigDecimal(d).setScale(2, RoundingMode.HALF_UP).doubleValue();
         return newDouble;
+
     }
 }
