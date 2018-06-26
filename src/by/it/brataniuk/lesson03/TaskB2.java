@@ -37,17 +37,23 @@ class TaskB2 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        double D = b * b - 4.0D * a * c;
+        double d=dis(a,b,c);
         double x, x2;
-        if (D > 0) {
-            x = (-b - Math.sqrt(D)) / (2.0D * a);
-            x2 = (-b + Math.sqrt(D)) / (2.0D * a);
+        if ( d> 0) {
+            x2 = (-b - Math.sqrt(d)) / (2.0D * a);
+            x = (-b + Math.sqrt(d)) / (2.0D * a);
             System.out.println(x + " " + x2);
-        } else if (D == 0.0D) {
+        }
+        else if (d == 0) {
             x = -b / (2.0D * a);
             System.out.println(x);
-        } else {
-            System.out.println("Отрицательный дискриминант");
-        }
+       } else {
+           System.out.println("Отрицательный дискриминант");
+       }
+       }
+
+    public static double dis(int a, int b, int c){
+        return (b * b - 4 * a * c);
     }
-}
+    }
+
