@@ -20,8 +20,24 @@ package by.it.prudnikau.lesson04;
 2 2 2
 
  */
-
+import java.util.Scanner;
 
 public class TaskA3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int i1 = sc.nextInt();
+        int i2 = sc.nextInt();
+
+        if(i1==i2&&i1==i)
+            System.out.println(i1+" "+i1+" "+i1);//3++
+        if(i==i1)
+            System.out.println(i+" "+i);//2
+        if(i1==i2)
+            System.out.println(i1+" "+i1);//2
+        if(i==i2)
+            System.out.println(i+" "+i);//2
+
+    }
 
 }
