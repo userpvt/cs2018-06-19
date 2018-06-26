@@ -1,4 +1,4 @@
-﻿package by.it.pronovich.lesson02;
+package by.it.pronovich.lesson02;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
