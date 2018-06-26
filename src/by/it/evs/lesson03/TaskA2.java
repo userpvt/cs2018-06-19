@@ -27,7 +27,6 @@ class TaskA2 {
         String c = "Подвижна, трепетна, как лань";
         String d = "И в кольцах  дивных ее длань";
         System.out.println("Мое любимое стихотворение:");
-        System.out.println(abcd);
+        System.out.println(a + "\n" + b + "\n" + c + "\n" + d);
     }
-
 }
