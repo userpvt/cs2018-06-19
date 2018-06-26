@@ -28,11 +28,9 @@ import java.util.Scanner;
 
 public class TaskA2 {
     public static void main(String[] args) {
-        System.out.println("Введите номер дня недели: ");
         Scanner sc = new Scanner(System.in);
-        int i = sc.nextInt();
-        for (int j = 1; j < 8; j++) {
-            switch (j) {
+        int day = sc.nextInt();
+        switch (day) {
                 case 1:
                     System.out.println("понедельник");
                     break;
@@ -57,6 +55,5 @@ public class TaskA2 {
                 default:
                     System.out.println("такого дня недели не существует");
             }
-        }
     }
 }
