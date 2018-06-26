@@ -31,6 +31,8 @@ import java.util.Scanner;
 
 
 */
+import java.util.Scanner;
+
 class TaskC3 {
 
     static double getWeight(int weight) {

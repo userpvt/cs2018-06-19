@@ -22,12 +22,12 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        String a="You know that it would be untrue\n" +
-                "You know that I would be a liar\n" +
-                "If I was to say to you\n" +
-                "Girl, we couldn't get much higher"
-        System.out.println("Мое любимое стихотворение:);
-        System.out.println(a+"\n"+b+"\n"+c"\n"+d);
+        String a="You know that it would be untrue";
+        String b="You know that I would be a liar";
+        String c="If I was to say to you";
+        String d="Girl, we couldn't get much higher";
+        System.out.println("Мое любимое стихотворение:");
+        System.out.println(a+"\n"+b+"\n"+c+"\n"+d);
 
     }
 
