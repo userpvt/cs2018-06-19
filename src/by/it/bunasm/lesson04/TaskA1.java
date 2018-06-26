@@ -26,10 +26,16 @@ package by.it.bunasm.lesson04;
  */
 public class TaskA1 {
     public static void main(String[] args) {
-        System.out.println("Я изучаю программировнаие.");
-        System.out.println("Меня интересует высокая зарплата!");
+        for (int i = 1; i <= 10; i++) {
+            if (i !=3 && i !=9)
+            System.out.println("Я изучаю программировнаие.");
+            else
+                System.out.println("Меня интересует высокая зарплата!");
 
+
+
+        }
+        }
     }
 
 
-}
