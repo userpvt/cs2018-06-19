@@ -31,22 +31,17 @@ public class TaskA3 {
         int b = sc.nextInt ();
         int c = sc.nextInt ();
         if (a==b && b==c) {
-            if (a==c)
             System.out.println(a + " " + b + " " + c);
+        }
             else if (a==b)
                 System.out.println(a + " " + b);
-            else if (b==с)
+            else if (b==c)
                 System.out.println(b + " " + c);
-            else if (a==с)
+            else if (a==c)
                 System.out.println(a + " " + c);
 
 
 
         }
-        else
-            System.out.println(a + " " + b);
-
-
     }
 
-}
