@@ -10,12 +10,11 @@ public class Main {
             String octal = Integer.toOctalString(i);
             if (octal.length()>8) octal=octal.substring(octal.length()-8);
             octal = String.format("%8s", octal).replace(" ", "0");
-            System.out.printf("%8s %4d %n",octal, i);
+            System.out.printf("%8s %4d %n",binary, octal, i);
             String hex = Integer.toHexString(i);
             if (hex.length()>8) hex=hex.substring(hex.length()-8);
             hex = String.format("%8s", hex).replace(" ", "0");
-            System.out.printf("%8s %4d %n",hex, i);
+            System.out.printf("%8s %4d %n",binary, octal, hex, i);
         }
     }
-
 }
