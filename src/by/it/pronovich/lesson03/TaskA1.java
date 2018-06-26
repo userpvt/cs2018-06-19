@@ -33,6 +33,28 @@ Scanner sc=new Scanner(System.in);
 
  */
 
+import java.util.Scanner;
+
 class TaskA1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i=sc.nextInt();
+        int b=sc.nextInt();
+        int sum=i+b;
+        int residual=i-b;
+        int multiplication=i*b;
+        int division=i/b;
+        int del=i%b;
+
+        double sum2=i+b;
+        double residual2=i-b;
+        double multiplication2=i*b;
+        double division2=(double)i/b;
+        double del2=i%b;
+
+        System.out.println(sum+" "+residual+" "+multiplication+" "+division+" "+del);
+        System.out.print(sum2+" "+residual2+" "+multiplication2+" "+division2+" "+del2);
+
+    }
 
 }
