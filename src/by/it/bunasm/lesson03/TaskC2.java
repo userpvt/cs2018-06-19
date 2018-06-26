@@ -21,6 +21,9 @@ package by.it.bunasm.lesson03;
 */
 public class TaskC2 {
 
+    }
+
+
 
 
 
