@@ -23,6 +23,22 @@ size прочитать c клавиатуры. Числа разделить п
 2. Программа должна выводить текст на экран.
 3. Программа должна выводить таблицу умножения size х size.
  */
+import java.util.Scanner;
 public class TaskB2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int b=1;
+        for (int j = 0; j <i ; j++) {
+            for (int k = 1; k <=i ; k++) {
+                System.out.print(b*k+" ");
+            }
+            System.out.println();
+            b++;
+        }
+
+
+
+    }
 
 }
