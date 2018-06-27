@@ -1,5 +1,7 @@
 package by.it.loiko.lesson04;
 
+import java.util.Scanner;
+
 /*
 Таблица умножения
 Вывести на экран таблицу умножения size х size используя цикл while.
@@ -22,7 +24,23 @@ size прочитать c клавиатуры. Числа разделить п
 1. Программа должна считывать переменную int size c клавиатуры.
 2. Программа должна выводить текст на экран.
 3. Программа должна выводить таблицу умножения size х size.
- */
+*/
 public class TaskB2 {
+    public static void main(String[] args) {
+        int c;
+        Scanner sc1 = new Scanner(System.in);
+        int size = sc1.nextInt();
+        for (int i = 1; i <= size; i++) {
+            int b = 1;
+
+            while ( b <= size){
+
+                System.out.print((i*b) + " ");
+                b++;
+
+            }
+            System.out.println();
+        }
+    }
 
 }

@@ -25,7 +25,22 @@ package by.it.loiko.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc1=new Scanner(System.in);
+        int a = sc1.nextInt();
+        int sum = 0;
+        for (int i = 1; i < a; i++) {
+            sum = sum+i;
+
+            if (sum>a)
+                break;
+            System.out.print(sum+",");
+
+        }
+    }
 
 }
+
