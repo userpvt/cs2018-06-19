@@ -79,6 +79,7 @@ public class TaskC1 {
                         break;
                     case 6:
                         System.out.println("За июнь начислено $" + zp1);
+                        if (zp1 == 666) month = 15;
                         break;
                     case 7:
                         System.out.println("За июль начислено $" + zp1);
