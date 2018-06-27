@@ -23,15 +23,21 @@ import java.util.Scanner;
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
 public class TaskC2 {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int i=sc.nextInt();
+
+    static int sumDigitsInNumber(int i){
         int a=i%10;
         int b=(i/10)%10;
         int c=(i/100)%10;
         int d=(i/1000)%10;
         int e=a+b+c+d;
-        System.out.println(e);
+        return e;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int j=sc.nextInt();
+        System.out.println(sumDigitsInNumber(j));
     }
 
 

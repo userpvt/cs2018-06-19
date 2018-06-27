@@ -25,7 +25,19 @@ package by.it.gavrilenko.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i=sc.nextInt();
+        int sum=1;
+        int k=2;
+        while (sum<=i){
+            System.out.print(sum+",");
+            sum=sum+k;
+            k++;
+        }
+    }
 
 }
