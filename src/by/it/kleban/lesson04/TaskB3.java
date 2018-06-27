@@ -25,7 +25,19 @@ package by.it.kleban.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int n = 0;
+        for (int j = 1; n <= i; j++) {
+            n += j;
+            if(n<=i){
+                System.out.print(n + ",");
+            }
+        }
 
+    }
 }
