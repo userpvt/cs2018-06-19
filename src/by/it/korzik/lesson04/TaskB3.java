@@ -25,7 +25,18 @@ package by.it.korzik.lesson04;
  */
 
 
-
+import java.util.Scanner;
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt(),b =0;
+        for(int c =1;c<=a;c++){
+            b+=c;
+            if(b>a){
+                break;
+            }
+            System.out.print(b+",");
 
+        }
+    }
 }
