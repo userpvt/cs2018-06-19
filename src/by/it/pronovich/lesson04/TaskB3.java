@@ -25,7 +25,23 @@ package by.it.pronovich.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
 
+        int predel =sc.nextInt();
+        sum(predel);
+
+    }
+    static void sum(int predel){
+        int sum=0;
+        for (int i=1;sum<=predel-i; i++){
+            sum=sum+i;
+            System.out.print(sum+",");
+
+        }
+
+    }
 }
