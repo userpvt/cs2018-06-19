@@ -20,7 +20,6 @@ public class TaskB1 {
         list.add("qwert");
         list.add("qwerty");
         list.add("asdf");
-        list.set(0,"poiuyt");
         int i= list.size();
         System.out.println(i);
 
