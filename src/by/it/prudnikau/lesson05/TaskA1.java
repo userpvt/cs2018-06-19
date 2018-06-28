@@ -24,6 +24,19 @@ package by.it.prudnikau.lesson05;
 */
 
 
+import java.util.Scanner;
+
 public class TaskA1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] mass = new int[10];
+        for (int j = mass.length-1; j >=0 ; j--) {
+            mass[j] = sc.nextInt();
+
+        }
+        for (int x:mass){
+            System.out.println(x);
+        }
+    }
 
 }

@@ -23,6 +23,45 @@ package by.it.prudnikau.lesson04;
 десять умножить на десять равно сто
 */
 
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ArrayList;
+
 public class TaskC3 {
+    public static void main(String[] args) {
+        String umn = " умножить на ";
+        String ravno = " равно ";
+        List<String> numbers = Arrays.asList("ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь",
+                "девять", "десять", "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать",
+                "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать", "двадцать", "тридцать", "сорок",
+                "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто", "сто");
+
+        String a, b, c;
+        for (int i = 2; i < 10; i++) {
+            for (int j = 2; j <= 10; j++) {
+                int res = i * j;
+                String result = "";
+                if(res<10&&res<20){
+                    result=numbers.get(res);
+                }
+                if(res>=20&&res<30){
+                    result=String.valueOf(res);
+                }
+
+
+
+                String number = numbers.get(i);
+                String number1 = numbers.get(j);
+                System.out.println(number + umn + number1 + ravno+result);
+
+
+            }
+
+        }
+
+
+    }
+
 
 }

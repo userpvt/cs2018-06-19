@@ -47,7 +47,7 @@ public class TaskC1 {
         double bonus = (i / 2) + i;
         int w = 1, l = 1, aut = 1;
         String a = "За ";
-        String c = "начислено ";
+        String c = "начислено $";
         if (i < 300 || i > 3000) {
             System.out.println("Мы вам перезвоним!");
         } else {
@@ -56,7 +56,7 @@ public class TaskC1 {
                 if (j == 0 && w == 1) {
                     w++;
                     if (bonus == 666.0) {
-                        System.out.print("За месяц 0 начислено $0.0\n" +
+                        System.out.println("За месяц 0 начислено $0.0\n" +
                                 "За январь начислено $666.0");
                         break;
                     }
