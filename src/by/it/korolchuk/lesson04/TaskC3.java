@@ -23,6 +23,40 @@ package by.it.korolchuk.lesson04;
 десять умножить на десять равно сто
 */
 
+
 public class TaskC3 {
 
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.println(stringNumber(i) + " умножить на " + stringNumber(j)
+                        + " равно " + stringNumber(i * j));
+            }
+        }
+    }
+
+    public static String stringNumber(int n) {
+        String[] firstTwentyNumbers = {"", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять", "десять",
+                "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"};
+        String[] bigNumbers = {"", "", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто"};
+
+
+        if (n == 100) {
+
+            return "сто";
+
+        } else if (n > 0 && n < 19) {
+
+            return firstTwentyNumbers[n];
+
+        } else {
+
+            return bigNumbers[n / 10] + " " + firstTwentyNumbers[n % 10];
+        }
+
+    }
 }
+
+
+

@@ -25,7 +25,26 @@ package by.it.korolchuk.lesson04;
  */
 
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите любое число");
+        int num = sc.nextInt();
+        int sum = 0;
+
+        for (int i=1; i<=num; i++) {
+            sum=sum+i;
+            System.out.print(sum + ",");
+            if ((sum+i)>=num)
+                break;
+
+
+        }
+    }
 
 }
+
+

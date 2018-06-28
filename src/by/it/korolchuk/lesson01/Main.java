@@ -3,7 +3,7 @@ package by.it.korolchuk.lesson01;
 public class Main {
     public static void main(String[] args) {
 
-        for (byte i=Byte.MIN_VALUE; i<=Byte.MAX_VALUE; i++) {
+        for (byte i = Byte.MIN_VALUE; i <= Byte.MAX_VALUE; i++) {
 
             String binary = Integer.toBinaryString(i);
             if (binary.length() > 8) binary = binary.substring(binary.length() - 8);
@@ -19,12 +19,10 @@ public class Main {
 
             System.out.printf("%8s %n", binary + "\t" + octal + "\t" + hex + "\t" + i);
 
-                if (i==Byte.MAX_VALUE)
-                {
-                    break;
-                }
 
-
+            if (i == Byte.MAX_VALUE) {
+                break;
+            }
         }
 
     }
