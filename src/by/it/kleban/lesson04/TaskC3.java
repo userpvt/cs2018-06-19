@@ -22,7 +22,6 @@ package by.it.kleban.lesson04;
 ...
 десять умножить на десять равно сто
 */
-
 public class TaskC3 {
 
 }
