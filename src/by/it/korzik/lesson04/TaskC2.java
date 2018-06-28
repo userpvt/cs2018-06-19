@@ -31,7 +31,7 @@ public class TaskC2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int day=scan.nextInt(),month=scan.nextInt(),b = 0;
-        for(int a =1;a<=(month)-1;a++){
+        for(int a =1;a<=(month-1);a++){
             if(a==2){
                 b+=28;
             }
