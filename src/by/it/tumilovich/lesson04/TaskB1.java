@@ -1,5 +1,7 @@
 package by.it.tumilovich.lesson04;
 
+import java.util.Scanner;
+
 /*
 Определите количество дней в году
 
@@ -26,5 +28,20 @@ package by.it.tumilovich.lesson04;
 
 */
 public class TaskB1 {
+    static boolean checkLeapYear(int year){
+        boolean leapYear;
+        if (year%4==0){
+            if (year%100==0&&year%400!=0)leapYear=false;
+             else leapYear=true;
+        } else leapYear=false;
+        return leapYear;
+    }
+    public static void main(String[] args) {
+        System.out.println("Введите год:");
+        Scanner sc=new Scanner(System.in);
+        int i=sc.nextInt();
+        if (checkLeapYear(i)) System.out.println("количество дней в году: 366");
+        else System.out.println("количество дней в году: 365");
+    }
 
 }

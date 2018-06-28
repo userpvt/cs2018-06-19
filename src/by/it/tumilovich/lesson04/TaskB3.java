@@ -25,7 +25,19 @@ package by.it.tumilovich.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
-
+    public static void main(String[] args) {
+        System.out.println("Введите целое число: ");
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
+        int x=1;
+        int sum=1;
+        while (sum<=number){
+            System.out.print(sum+",");
+            x++;
+            sum+=x;
+        }
+    }
 }
