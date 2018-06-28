@@ -40,7 +40,7 @@ import java.util.Scanner;
 */
 public class TaskC1 {
     public static void main(String[] args) {
-        String monthes[]={"месяц 0","январь","февраль","март",
+        String months[]={"месяц 0","январь","февраль","март",
                 "апрель","май","июнь","июль","август","сентябрь",
                 "октябрь","ноябрь","декабрь","месяц 13","месяц 14"};
         System.out.println("Какую вы хотите зарплату в $$$?");
@@ -51,12 +51,12 @@ public class TaskC1 {
         } else {
         int month=0;
         double sum;
-        while(month<monthes.length){
-            if(monthes[month].equals("июнь")||monthes[month].equals("июль")||monthes[month].equals("август")){sum=salary;}
-            else if (!monthes[month].equals("месяц 0")&&!monthes[month].equals("месяц 13")&&!monthes[month].equals("месяц 14")){
+        while(month<months.length){
+            if(months[month].equals("июнь")||months[month].equals("июль")||months[month].equals("август")){sum=salary;}
+            else if (!months[month].equals("месяц 0")&&!months[month].equals("месяц 13")&&!months[month].equals("месяц 14")){
                 sum=salary*1.5;
             } else sum=0.0;
-             System.out.println("За "+monthes[month]+" начислено $"+sum);
+             System.out.println("За "+months[month]+" начислено $"+sum);
              month++;
              if(sum==666)break;
         }
