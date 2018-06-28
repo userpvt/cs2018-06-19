@@ -27,10 +27,14 @@ TC = (TF – 32) * 5/9
 import java.util.Scanner;
 
 class TaskC1 {
+    static double convertCelsiumToFahrenheit(int i){
+        double TF =(9*i/5)+32;
+        return TF;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int celsium=sc.nextInt();
-        System.out.println(celsium);
+        int TC=sc.nextInt();
+        System.out.println(convertCelsiumToFahrenheit(TC));
     }
 
 
