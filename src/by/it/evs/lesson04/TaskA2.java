@@ -24,7 +24,6 @@ package by.it.evs.lesson04;
 
  */
 
-import java.util.Scanner;
+public class TaskA2 {
 
-
-
+}

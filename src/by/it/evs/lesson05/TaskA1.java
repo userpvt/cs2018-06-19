@@ -24,6 +24,19 @@ package by.it.evs.lesson05;
 */
 
 
+import java.util.Scanner;
+
 public class TaskA1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int[] arr=new int[10];
+        for (int i = arr.length-1; i >=0; i--) {
+            arr[i]=sc.nextInt();
+        }
+        for (int element : arr) {
+            System.out.println(element);
+        }
+
+    }
 
 }
