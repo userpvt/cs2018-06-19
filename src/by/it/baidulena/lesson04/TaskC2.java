@@ -28,6 +28,7 @@ import java.util.Scanner;
 256
 
  */
+/*
 public class TaskC2 {
     public static int getMonth(int month) {
         int a = 31;
@@ -70,9 +71,44 @@ public class TaskC2 {
         System.out.println(getMonth(month) + chislo);
     }
 }
+*/
 
+public class TaskC2 {
+    public static int getMonth(int d) {
+        int a = 31;
+        int b = 30;
+        int c = 28;
+        switch (d) { //рапознает количество дней, исходя из месяца
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return a;
+            case 2:
+                return c;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return b;
+            default:
+                return 0;
+        }
+    }
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            int chislo = sc.nextInt();
+            int month = sc.nextInt();
+            int days = 0;
+            for (int d = 0; d < month; d++) { // количество полных месяцев, которые надо сосчитать
+               days += (getMonth(d));
+            }
+            System.out.println(days + chislo);
+        }
 
-
-
+}
 
 
