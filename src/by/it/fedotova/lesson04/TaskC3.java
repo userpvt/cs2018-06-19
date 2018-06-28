@@ -24,5 +24,24 @@ package by.it.fedotova.lesson04;
 */
 
 public class TaskC3 {
+    public static void main(String[] args) {
+        int a;
+        int k;
+        int result;
+        for (int i=0; i <=10; i++){
+            a =i;
 
-}
+            result = 1;
+            while (a>0 && a <=10){
+                result = a*2;
+                a--;
+                System.out.print(result + " ");break;
+
+                }
+            }
+        }
+
+
+    }
+
+

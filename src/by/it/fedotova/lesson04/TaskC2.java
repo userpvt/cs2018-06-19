@@ -1,5 +1,8 @@
 package by.it.fedotova.lesson04;
 
+import java.awt.*;
+import java.util.Scanner;
+
 /*
 
 На входе вводится число и месяц 2018 года.
@@ -27,5 +30,16 @@ package by.it.fedotova.lesson04;
 
  */
 public class TaskC2 {
+    public static void main(String[] args) {
+         Scanner scn = new Scanner(System.in);
+          int d = scn.nextInt();
+          int m = scn.nextInt();
+
+          {
+    System.out.println("0");
+}
+
+
+    }
 
 }
