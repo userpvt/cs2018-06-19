@@ -29,9 +29,15 @@ public class TaskB2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
-        while (size <= 10) {
-            System.out.println(size * (size++) + " ");
+        int size1 = 1;
+        while (size1 <= size) {
+            int size2 = 1;
+            while (size2 <= size) {
+                System.out.print(size1 * size2 + " ");
+                size2++;
+            }
+            System.out.println();
+            size1++;
         }
-        System.out.println();
     }
 }
