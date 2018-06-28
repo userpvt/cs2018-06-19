@@ -10,12 +10,21 @@ package by.it.markov.lesson05;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+/*import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
-
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<int> fs = new ArrayList();
+        ArrayList<int> f3 = new ArrayList();
+        ArrayList<int> f2 = new ArrayList();
+        ArrayList<int> fd = new ArrayList();
+        for (int i = 0; i < 20; i++) {
+            fs.add(); =sc.nextInt();
+        }
+        if (f3(1) % 3 == 0)
     }
 
     private static void printList(List<Integer> list) {
@@ -24,3 +33,4 @@ public class TaskC1 {
 
 
 }
+*/
