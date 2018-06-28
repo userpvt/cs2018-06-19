@@ -25,6 +25,7 @@ float f - присваивание в десятичном формате
 
 strictfp class TaskB1 {
     public static  void main(String[] args) {
+<<<<<<< HEAD
         double d = 111.111;
         byte b = 0b111;
         long o = 0111L;
@@ -34,3 +35,14 @@ strictfp class TaskB1 {
         System.out.println(d + " " + b + " " + o + " " + h + " " + f);
     }
 }
+=======
+        double d = 0;
+        double b = 0;
+        double o = 0;
+        double h = 0;
+        double f = 0;
+        System.out.println(d + b + o + h + f);
+        System.out.println(d + " " + b + " " + o + " " + h + " " + f);
+    }
+}
+>>>>>>> origin/master
