@@ -11,5 +11,8 @@ package by.it.kuzmich.lesson05;
 
 
 public class TaskB1 {
+    public static void main(String[] args) {
+
+    }
 
 }
