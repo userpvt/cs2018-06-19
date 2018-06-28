@@ -1,5 +1,7 @@
 package by.it.bunasm.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,16 @@ package by.it.bunasm.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc=new Scanner (System.in);
+        int month = sc.nextInt ();
+
+        if (month < 300 || month >3000) {
+            System.out.println("Мы вам перезвоним!");
+
+        }
+    }
 
 
 }
