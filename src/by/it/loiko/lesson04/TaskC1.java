@@ -1,5 +1,7 @@
 package by.it.loiko.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -36,7 +38,5 @@ package by.it.loiko.lesson04;
 За месяц 14 начислено $0.0
 
 */
-public class TaskC1 {
 
 
-}
