@@ -46,22 +46,65 @@ public class TaskC1 {
         if (zp < 300 || zp > 3000) {
             System.out.println("Мы вам перезвоним!");
         } else for (int month = 0; month <= 14; month++) {
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За январь начислено"+zp);
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
-            System.out.println("За месяц 0 начислено $0.0");
+            System.out.println("За " + mesac(month) + " начислено $" + zp * kofficient(month));
+            if (zp*kofficient(month)==666){
+                break;
+            }
         }
     }
+    public static double kofficient(int n) {
+        double k;
+        if (n >= 6 && n <= 8) {
+            k = 1;
+        } else if (n == 0 || n >= 13) {
+            k = 0;
+        } else k = 1.5D;
+        return k;
+    }
 
+    public static String mesac(int m) {
+        String mes;
+        switch (m) {
+            case 1:
+                mes = "январь";
+                break;
+            case 2:
+                mes = "февраль";
+                break;
+            case 3:
+                mes = "март";
+                break;
+            case 4:
+                mes = "апрель";
+                break;
+            case 5:
+                mes = "май";
+                break;
+            case 6:
+                mes = "июнь";
+                break;
+            case 7:
+                mes = "июль";
+                break;
+            case 8:
+                mes = "август";
+                break;
+            case 9:
+                mes = "сентябрь";
+                break;
+            case 10:
+                mes = "октябрь";
+                break;
+            case 11:
+                mes = "ноябрь";
+                break;
+            case 12:
+                mes = "декабрь";
+                break;
+            default:
+                mes = "месяц " + m;
+        }
+        return mes;
+    }
 }
+
