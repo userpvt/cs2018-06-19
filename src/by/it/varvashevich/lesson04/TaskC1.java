@@ -52,56 +52,56 @@ public class TaskC1 {
                 String strMonth = "месяц " + month;
                 switch (month) {
                     case 1:
-                        strMonth="январь";
+                        strMonth = "январь";
                         break;
                     case 2:
-                        strMonth="февраль";
+                        strMonth = "февраль";
                         break;
                     case 3:
-                        strMonth="март";
+                        strMonth = "март";
                         break;
                     case 4:
-                        strMonth="апрель";
+                        strMonth = "апрель";
                         break;
                     case 5:
-                        strMonth="май";
+                        strMonth = "май";
                         break;
                     case 6:
-                        strMonth="июнь";
+                        strMonth = "июнь";
                         break;
                     case 7:
-                        strMonth="июль";
+                        strMonth = "июль";
                         break;
                     case 8:
-                        strMonth="август";
+                        strMonth = "август";
                         break;
                     case 9:
-                        strMonth="сентябрь";
+                        strMonth = "сентябрь";
                         break;
                     case 10:
-                        strMonth="октябрь";
+                        strMonth = "октябрь";
                         break;
                     case 11:
-                        strMonth="ноябрь";
+                        strMonth = "ноябрь";
                         break;
                     case 12:
-                        strMonth="декабрь";
+                        strMonth = "декабрь";
                         break;
                 }
-double zzz;
+                double zzz;
                 if (month < 1 || month > 12) zzz = 0;
                 else if (month < 6 || month > 8) zzz = zpw;
-                else zzz=zp;
+                else zzz = zp;
 
-                System.out.println("За "+strMonth+" начислено $"+zzz);
-                if (zzz==666.0) break;
-                                }
-
-
+                System.out.println("За " + strMonth + " начислено $" + zzz);
+                if (zzz == 666.0) break;
             }
+
+
         }
-
-
     }
+
+
+}
 
 

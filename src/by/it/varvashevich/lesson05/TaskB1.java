@@ -10,6 +10,27 @@ package by.it.varvashevich.lesson05;
 */
 
 
-public class TaskB1 {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.ArrayList;
 
-}
+
+public class TaskB1 {
+    public static void main(String[] args) throws IOException {
+        Reader r = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(r);
+
+        ArrayList list=new ArrayList();
+        for (int i=0; i<5; i++)
+        {String s = reader.readLine();
+        list.add(s);
+            }
+
+        System.out.println(list.size());
+     for (int i=0; i < list.size(); i++)
+    {int j=list.size()-i-1;
+        System.out.println(list.get(j));
+    }
+}}
