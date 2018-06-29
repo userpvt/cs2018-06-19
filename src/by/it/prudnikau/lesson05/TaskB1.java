@@ -10,6 +10,27 @@ package by.it.prudnikau.lesson05;
 */
 
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
 public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("петя ");
+        list.add("васяколя");
+        list.add("катяюля");
+        list.add("васька");
+        list.add("николай");
+
+        int t=list.size();
+        System.out.println(t);
+        for (String s:list) {
+            System.out.println(s);
+        }
+
+
+
+    }
 
 }
