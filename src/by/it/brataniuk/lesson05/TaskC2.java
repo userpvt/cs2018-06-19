@@ -4,7 +4,6 @@ package by.it.brataniuk.lesson05;
 Задача: Написать программу, которая вводит с клавиатуры 20 чисел и выводит их в убывающем порядке.
 */
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TaskC2 {
@@ -17,7 +16,6 @@ public class TaskC2 {
         sort(list);
         print(list);
     }
-
     public static void sort(int[] array) {
 
         int a, b, t;
@@ -33,10 +31,9 @@ public class TaskC2 {
             }
         }
     }
-
     public static void print(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+        for (int anArray : array) {
+            System.out.println(anArray);
         }
     }
 }
