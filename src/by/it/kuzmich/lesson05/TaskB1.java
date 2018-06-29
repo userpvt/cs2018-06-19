@@ -10,8 +10,20 @@ package by.it.kuzmich.lesson05;
 */
 
 
+import java.util.ArrayList;
+
 public class TaskB1 {
     public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        String a = "A";
+        for (int n = 0; n<=4; n++){
+            list.add(a);
+
+        }
+        System.out.println(list.size());
+        for (String a1 : list){
+            System.out.println(a1);
+        }
 
     }
 

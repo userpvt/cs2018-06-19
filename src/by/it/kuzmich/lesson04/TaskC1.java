@@ -64,7 +64,7 @@ public class TaskC1 {
                     case 11: strMonth="ноябрь";break;
                     case 12: strMonth="декабрь";break;
                 }
-                double zarplata = pay*1.5;
+                double zarplata = pay*0;
                 if (month <1 || month >12) zarplata=0;
                 if (month>6 && month<=8) zarplata=pay;
                 System.out.println("За"+strMonth+" начислено $");
