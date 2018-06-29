@@ -29,21 +29,15 @@ import java.util.Scanner;
 
 public class TaskB3 {
     public static void main(String[] args) {
-         Scanner scn = new Scanner(System.in);
-          int w = scn.nextInt();
-         int i =1;
-     while (i<((w / 2)-1)){
-            int sum = (i * (i + 1)) / 2;
+        Scanner scn = new Scanner(System.in);
+        int w = scn.nextInt();
+        int i = 1;
+        int sum = 0;
+        while (sum + i <= w) {
+            sum += i++;
             System.out.print(sum + ",");
-                i++;
-            if (sum >= (w-i)-1) {
-             break;
-         }
-         if (sum > (w-i)) {
-             break;
-         }
-         System.out.print("");
-            }
+        }
         }
     }
+
 
