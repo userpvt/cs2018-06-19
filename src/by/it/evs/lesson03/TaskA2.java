@@ -22,12 +22,11 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-        String a = "Лицо в сиянии луны ";
-        String b = "Глаза ее всегда грустны ";
-        String c = "Подвижна, трепетна, как лань";
-        String d = "И в кольцах  дивных ее длань";
+        String a = "1";
+        String b = "2";
+        String c = "3";
+        String d = "4";
         System.out.println("Мое любимое стихотворение:");
         System.out.println(a + "\n" + b + "\n" + c + "\n" + d);
     }
-
 }
