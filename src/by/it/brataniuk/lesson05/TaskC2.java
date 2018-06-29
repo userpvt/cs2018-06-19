@@ -10,22 +10,34 @@ import java.util.Scanner;
 public class TaskC2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int list[] = new int[5];
+        int[] list = new int[20];
         for (int s = 0; s < list.length; s++) {
             list[s] = (sc.nextInt());
         }
         sort(list);
+        print(list);
     }
 
     public static void sort(int[] array) {
+
         int a, b, t;
         for (a = 1; a < array.length; a++) {
-            for (b = array.length - 1; b >= a; b--) ;
-            if (array[b - 1] < array[b]) {
-                t = array[b - 1];
-                array[b - 1] = array[b];
-                array[b] = t;
+            for (b = array.length - 1; b >= a; b--) {
+
+                if (array[b - 1] < array[b]) {
+                    t = array[b - 1];
+                    array[b - 1] = array[b];
+                    array[b] = t;
+
+                }
             }
         }
     }
+
+    public static void print(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
 }
+
