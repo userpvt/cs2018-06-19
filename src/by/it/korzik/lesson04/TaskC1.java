@@ -77,7 +77,7 @@ public class TaskC1 {
         }
         else{
             for(int i=0;i<=14;i++){
-                if (i==0||i>12){
+                if (i<1||i>12){
                 System.out.println("За месяц "+i+" начислено $0.0");
                 }
                 else if (i>5&&i<9){
@@ -85,8 +85,8 @@ public class TaskC1 {
                     if(sal==666){break;}
                 }
                 else{
-                    System.out.println("За "+numToMonth(i)+" начислено $" + (sal+sal/2));
-                    if((sal+sal/2)==666){break;}
+                    System.out.println("За "+numToMonth(i)+" начислено $" + (sal*1.5));
+                    if((sal*1.5)==666){break;}
                 }
             }
         }
