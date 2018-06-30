@@ -15,6 +15,14 @@ public class Dog {
         return power;
     }
 
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public void setPower(double power) {
+        this.power = power;
+    }
+
     public Dog(String name, int age, int weight, double power) {
         this.name = name;
         this.age = age;
@@ -48,14 +56,15 @@ public class Dog {
 
     @Override
     public String toString() {
-        return "Кличка: " + name + " Возраст: " + age;
+        return "Кличка: " + name + ". Возраст: " + age;
     }
 
-   /* boolean win(Dog, otherDog) {
-        double wyChance = 0.2 * this.age + 0.3 * this.weight + 0.5 * this.power
-        double youChance = 0.2 * otherDog.age + 0.3 * otherDog.weight + 0.5 * otherDog.power
-        return
-    */
+    boolean win(Dog otherDog) {
+        double myChance = 0.2 * this.age + 0.3 * this.weight + 0.5 * this.power;
+        double youChance = 0.2 * otherDog.age + 0.3 * otherDog.weight + 0.5 * otherDog.power;
+        return myChance > youChance;
+    }
 }
+
 
 

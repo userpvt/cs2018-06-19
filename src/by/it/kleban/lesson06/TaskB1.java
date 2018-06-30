@@ -31,11 +31,13 @@ public class TaskB1 {
                 new Dog("Шарик", 1),
                 new Dog("Жучка", 2),
                 new Dog("Бобик", 3),
-                new Dog("<Барбос", 4),
-                new Dog("Полкан", 3),
+                new Dog("Барбос", 4),
+                new Dog("Полкан", 5),
 
         };
         DogHelper.printAllNames(dogs);
         double v = DogHelper.averageAge(dogs);
+        System.out.println(v);
     }
+
 }
