@@ -11,9 +11,35 @@ package by.it.loiko.lesson05;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TaskB1 {
     public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        Collections.addAll(list, "a","b","c","d","e");
+
+
+            /*for (int i = 0; i < 5; i++) {
+             String str = list.get(i);
+             list.add(Integer.toString(i));}*/
+
+                System.out.println(list.size());
+
+                for (String str : list)
+                    System.out.println(str);
+
+    }}
+
+
+
+
+
+
+
+
+
+
+   /* public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             String str = list.get(i);
@@ -31,4 +57,4 @@ public class TaskB1 {
 
     }
 
-}
+*/

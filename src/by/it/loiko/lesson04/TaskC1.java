@@ -44,56 +44,57 @@ public class TaskC1 {
         System.out.println("Какую вы хотите зарплату в $$$?");
         int pay=sc.nextInt();
         if (pay >3000 || pay<300) {
-            System.out.println("Какую вы хотите зарплату в $$$?");
+            System.out.println("Мы вам перезвоним!");
         }
         else
-        System.out.println("Мы вам перезвоним!");
+
 
 
         for (int month = 0; month <=14 ; month++) {
             String strMonth = "";
             double zzz = pay*1.5;
             switch (month) {
+
                 case 1:
-                    strMonth = "январь";
+                    strMonth = " январь ";
                     break;
                 case 2:
-                    strMonth = "февраль";
+                    strMonth = " февраль ";
                     break;
                 case 3:
-                    strMonth = "март";
+                    strMonth = " март ";
                     break;
                 case 4:
-                    strMonth = "апрель";
+                    strMonth = " апрель ";
                     break;
                 case 5:
-                    strMonth = "май";
+                    strMonth = " май ";
                     break;
                 case 6:
-                    strMonth = "июнь";
+                    strMonth = " июнь ";
                     break;
                 case 7:
-                    strMonth = "июль";
+                    strMonth = " июль ";
                     break;
                 case 8:
-                    strMonth = "август";
+                    strMonth = " август ";
                     break;
                 case 9:
-                    strMonth = "сентябрь";
+                    strMonth = " сентябрь ";
                     break;
                 case 10:
-                    strMonth = "октябрь";
+                    strMonth = " октябрь ";
                     break;
                 case 11:
-                    strMonth = "ноябрь";
+                    strMonth = " ноябрь ";
                     break;
                 case 12:
-                    strMonth = "декабрь";
+                    strMonth = " декабрь ";
                     break;
             }
-            zzz = pay * 1.5;
+
             if (month <1 || month>12) zzz=0;
-            if (month == 6) zzz =pay;
+            if (month >=6&&month<=8) zzz =pay;
 
                 System.out.println("За" + strMonth + "начислено $" + zzz);
                 if (zzz == 666) break;
