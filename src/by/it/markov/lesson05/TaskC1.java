@@ -34,3 +34,49 @@ public class TaskC1 {
 
 }
 */
+/*
+import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+ public class TaskC1 {
+        public static void main(String[] args) throws Exception {
+            ArrayList<Integer> fs = new ArrayList();
+            ArrayList<Integer> f3 = new ArrayList();
+            ArrayList<Integer> f2 = new ArrayList();
+            ArrayList<Integer> fd = new ArrayList();
+            Scanner sc = new Scanner(System.in);
+            for (int i = 0; i < 20; ) {
+                fs.add(sc.nextInt());
+                i++;
+            }
+
+            for (Integer x : fs) {
+                Integer n = fs.get(x);
+                if (n == 0){
+                    fd.add(fs.get(x));
+                    continue;
+                }
+                if (n % 3 == 0)
+                    f3.add(fs.get(x));
+                if (n % 2 == 0)
+                    f2.add(fs.get(x));
+                if ((n % 2 != 0) && (n % 3 != 0))
+                    fd.add(fs.get(x));
+            }
+            printList(f3);
+            printList(f2);
+            printList(fd);
+        }
+
+        private static void printList(List<Integer> list) {
+            for (Integer aList : list) System.out.println(aList);
+        }
+
+
+    }
+
+*/
