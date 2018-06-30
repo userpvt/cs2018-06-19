@@ -6,5 +6,6 @@ public class DogHelper {
             System.out.print(dog.getName() + " ");
 
         }
+        System.out.println();
     }
 }
