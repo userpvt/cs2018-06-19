@@ -50,13 +50,18 @@ public class TaskC1 {
 
             if (salary*1.5 == 666 ) {
                 System.out.println("За месяц 0 начислено $"  + (double) 0);
-                System.out.println("За январь начислено $666");
+                System.out.println("За январь начислено $666.0");
                 break;
             }
 
         else if (salary == 666 ) {
             System.out.println("За месяц 0 начислено $" + (double) 0);
-            System.out.println("За июнь начислено $666");
+                System.out.println("За январь начислено $" + (double) 666*1.5);
+                System.out.println("За февраль начислено $" + (double) 666*1.5);
+                System.out.println("За март начислено $" + (double) 666*1.5);
+                System.out.println("За апрель начислено $" + (double) 666*1.5);
+                System.out.println("За май начислено $" + (double) 666*1.5);
+            System.out.println("За июнь начислено $" + salary);
             break;
         }
 
