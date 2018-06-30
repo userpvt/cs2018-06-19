@@ -13,7 +13,7 @@ public class TaskC2 {
         int[] arr = new int[20];
         for (int i = arr.length - 1; i >= 0; i--)
             arr[i] = sc.nextInt();
-        
+
     }
 
 
