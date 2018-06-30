@@ -24,30 +24,36 @@ import java.awt.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Scanner;
 
 
 public class TaskB2 {
 
     public static void main(String[] args) throws Exception {
-        int list [] = new int [20];
-        int a [] = new int [10];
-        int b [] = new int [10];
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int list[] = new int[20];
+        int a[] = new int[10];
+        int b[] = new int[10];
 
-        for (int i=0; i < list.length; i++) {
-            list[i] = Integer.parseInt(reader.readLine());
+       // BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Scanner scan = new Scanner(System.in);
+        for (int i = 0; i < list.length; i++) {
+            list[i] = scan.nextInt();
         }
-        a = Arrays.copyOfRange(list, 0, 9);
-        b = Arrays.copyOfRange(list, 10, 20);
 
-        for (int i=0; i < b.length; i++) {
-            System.out.println("a="+Arrays.toString(a));
-            System.out.println("b="+Arrays.toString(b));
+        System.arraycopy(list, 0, a, 0, a.length);
+        for (int i = 0; i < b.length; i++) {
+            //   list[i] = Integer.parseInt(reader.readLine());
+            b[b.length - 1 - i] = list[list.length - 1 - i];
+        }
+      //  a = Arrays.copyOfRange(list, 0, 9);
+      //  b = Arrays.copyOfRange(list, 10, 20);
+
+        for (int i = 0; i < b.length; i++) {
+            System.out.println("a=" + Arrays.toString(a));
+            System.out.println("b=" + Arrays.toString(b));break;
         }
     }
 }
-
-
 
 
 
