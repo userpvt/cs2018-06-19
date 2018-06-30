@@ -19,9 +19,7 @@ public class TaskB1 {
         Collections.addAll(list, "a","b","c","d","e");
 
 
-            /*for (int i = 0; i < 5; i++) {
-             String str = list.get(i);
-             list.add(Integer.toString(i));}*/
+
 
                 System.out.println(list.size());
 
