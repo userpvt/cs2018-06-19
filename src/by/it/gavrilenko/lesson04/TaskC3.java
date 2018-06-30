@@ -23,6 +23,9 @@ package by.it.gavrilenko.lesson04;
 десять умножить на десять равно сто
 */
 
-public class TaskC3 {
 
+public class TaskC3 {
+    public static void main(String[] args) {
+        int i = 2;
+    }
 }
