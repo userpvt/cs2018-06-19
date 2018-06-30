@@ -1,5 +1,7 @@
 package by.it.fedotova.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,49 @@ package by.it.fedotova.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner scn = new Scanner(System.in);
+        int w = scn.nextInt();
+        //double z = w;
+        double zb = w * 0.5 + w;
 
+        if (w < 300 || w > 3000) {
+            System.out.println("Мы вам перезвоним!");
+        }
 
+        else if (w == 666) {
+            System.out.println("За месяц 0 начислено $0.0");
+            System.out.println("За январь начислено $" + zb);
+            System.out.println("За февраль начислено $" + zb);
+            System.out.println("За март начислено $" + zb);
+            System.out.println("За апрель начислено $" + zb);
+            System.out.println("За май начислено $" + zb);
+            System.out.println("За июнь начислено $666.0");
+
+        }
+        else if (zb ==666) {
+            System.out.println("За месяц 0 начислено $0.0");
+            System.out.println("За январь начислено $666.0");
+        }
+        else
+        {
+            System.out.println("За месяц 0 начислено $0.0");
+            System.out.println("За январь начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За февраль начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За март начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За апрель начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За май начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За июнь начислено $" + ((double) w));
+            System.out.println("За июль начислено $" + ((double) w));
+            System.out.println("За август начислено $" + ((double) w));
+            System.out.println("За сентябрь начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За октябрь начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За ноябрь начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За декабрь начислено $" + ((double) w * 0.5 + w));
+            System.out.println("За месяц 13 начислено $0.0");
+            System.out.println("За месяц 14 начислено $0.0");
+
+        }
+    }
 }

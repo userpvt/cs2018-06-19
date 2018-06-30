@@ -20,12 +20,24 @@ package by.it.fedotova.lesson04;
 14
 Вывод:
 1,3,6,10,
-
+{\frac  {n(n+1)}{2}}
 
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int w = scn.nextInt();
+        int i = 1;
+        int sum = 0;
+        while (sum + i <= w) {
+            sum += i++;
+            System.out.print(sum + ",");
+        }
+        }
+    }
 
-}
+

@@ -23,6 +23,27 @@ package by.it.fedotova.lesson04;
 десять умножить на десять равно сто
 */
 
-public class TaskC3 {
+import java.util.Scanner;
 
+public class TaskC3 {
+    public static void main(String[] args) throws Exception
+    {
+        int w = 10;
+
+        int i=1,n=1;
+        while(i<=w)
+        {
+            System.out.print(i+" ");
+            while(n<=(w-1))
+            {
+                n++;
+                System.out.print(i*n+" ");
+            }
+            i++;
+            n=1;
+            System.out.println("");
+        }
+    }
 }
+
+
