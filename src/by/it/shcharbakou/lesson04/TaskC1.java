@@ -36,53 +36,53 @@ package by.it.shcharbakou.lesson04;
 За месяц 14 начислено $0.0
 */
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
-public class TaskC1 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Какую вы хотите зарплату в $$$?");
-        int sal = sc.nextInt();
-        int extsal = sal+sal/2;
-        int devsal = 666;
-        if ((sal<300) | (sal>3000)) {
-            System.out.println("Мы вам перезвоним!");
-        }
-        else {
-            for (int i = 0; i<=14; i++) {
-                switch(i){
-                    case 0: System.out.println("За месяц 0 начислено $"+sal*0.0);
-                        break;
-					case 1: System.out.println("За январь начислено $"+extsal*1.0);
-                        break;
-					case 2: System.out.println("За февраль начислено $"+extsal*1.0);
-                        break;
-					case 3: System.out.println("За март начислено $"+extsal*1.0);
-                        break;
-					case 4: System.out.println("За апрель начислено $"+extsal*1.0);
-                        break;
-					case 5: System.out.println("За май начислено $"+extsal*1.0);
-                        break;
-					case 6: System.out.println("За июнь начислено $"+sal*1.0);
-                        break;
-					case 7: System.out.println("За июль начислено $"+sal*1.0);
-                        break;
-					case 8: System.out.println("За август начислено $"+sal*1.0);
-                        break;
-					case 9: System.out.println("За сентябрь начислено $"+extsal*1.0);
-                        break;
-					case 10: System.out.println("За октябрь начислено $"+extsal*1.0);
-                        break;
-					case 11: System.out.println("За ноябрь начислено $"+extsal*1.0);
-                        break;
-					case 12: System.out.println("За декабрь начислено $"+extsal*1.0);
-                        break;
-					case 13: System.out.println("За месяц 13 начислено $"+sal*0.0);
-                        break;
-					case 14: System.out.println("За месяц 14 начислено $"+sal*0.0);
-                    break;
-                }
-			}
-		}
-	}
-}
+//public class TaskC1 {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Какую вы хотите зарплату в $$$?");
+//        int sal = sc.nextInt();
+//        int extsal = sal+sal/2;
+//        int devsal = 666;
+//        if ((sal<300) | (sal>3000)) {
+//            System.out.println("Мы вам перезвоним!");
+//        }
+//        else {
+//            for (int i = 0; i<=14; i++) {
+//                switch(i){
+//                    case 0: System.out.println("За месяц 0 начислено $"+sal*0.0);
+//                        break;
+//					case 1: System.out.println("За январь начислено $"+extsal*1.0);
+//                        break;
+//					case 2: System.out.println("За февраль начислено $"+extsal*1.0);
+//                        break;
+//					case 3: System.out.println("За март начислено $"+extsal*1.0);
+//                        break;
+//					case 4: System.out.println("За апрель начислено $"+extsal*1.0);
+//                        break;
+//					case 5: System.out.println("За май начислено $"+extsal*1.0);
+//                        break;
+//					case 6: System.out.println("За июнь начислено $"+sal*1.0);
+//                       break;
+//					case 7: System.out.println("За июль начислено $"+sal*1.0);
+//                      break;
+//					case 8: System.out.println("За август начислено $"+sal*1.0);
+//                      break;
+//					case 9: System.out.println("За сентябрь начислено $"+extsal*1.0);
+//                      break;
+//					case 10: System.out.println("За октябрь начислено $"+extsal*1.0);
+//                      break;
+//					case 11: System.out.println("За ноябрь начислено $"+extsal*1.0);
+//                      break;
+//					case 12: System.out.println("За декабрь начислено $"+extsal*1.0);
+//                      break;
+//					case 13: System.out.println("За месяц 13 начислено $"+sal*0.0);
+//                      break;
+//					case 14: System.out.println("За месяц 14 начислено $"+sal*0.0);
+//                  break;
+//              }
+//			}
+//		}
+//	}
+//}
