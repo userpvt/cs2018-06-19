@@ -22,6 +22,27 @@ package by.it.evs.lesson04;
  */
 
 
-public class TaskA3 {
+import java.util.Scanner;
 
+public class TaskA3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int j = sc.nextInt();
+        int k = sc.nextInt();
+        if (i == k){
+            if (i == j){
+                System.out.println(i + " " + j + " " + k);
+            }
+            else {
+                System.out.println( i + " " + k);
+            }
+        }
+        else if (j == k){
+            System.out.println(j + " " + k);
+        }
+        else if (i == j){
+            System.out.println(i + " " + j);
+        }
+    }
 }
