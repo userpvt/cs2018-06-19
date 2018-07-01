@@ -20,7 +20,7 @@ public class TaskC2 {
         Arrays.sort(m);
 
         for (int i = m.length - 1; i >= 0; i--) {
-            System.out.println(m[i] + "  ");
+            System.out.println(m[i]);
         }
     }
 }
