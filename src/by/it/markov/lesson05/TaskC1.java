@@ -39,36 +39,36 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
- public class TaskC1 {
-        public static void main(String[] args) throws Exception {
-            ArrayList<Integer> fs = new ArrayList();
-            ArrayList<Integer> f3 = new ArrayList();
-            ArrayList<Integer> f2 = new ArrayList();
-            ArrayList<Integer> fd = new ArrayList();
-            Scanner sc = new Scanner(System.in);
-            for (int i = 0; i < 20; ) {
-                fs.add(sc.nextInt());
-                i++;
-            }
-
-            for (Integer n : fs) {
-                if (n == 0){
-                    fd.add(n);
-                    continue;
-                }
-                if (n % 3 == 0)
-                    f3.add(n);
-                if (n % 2 == 0)
-                    f2.add(n);
-                if ((n % 2 != 0) && (n % 3 != 0))
-                    fd.add(n);
-            }
-            printList(f3);
-            printList(f2);
-            printList(fd);
+public class TaskC1 {
+    public static void main(String[] args) throws Exception {
+        ArrayList<Integer> fs = new ArrayList();
+        ArrayList<Integer> f3 = new ArrayList();
+        ArrayList<Integer> f2 = new ArrayList();
+        ArrayList<Integer> fd = new ArrayList();
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < 20; ) {
+            fs.add(sc.nextInt());
+            i++;
         }
 
-        private static void printList(List<Integer> list) {
-            for (Integer aList : list) System.out.println(aList);
+        for (Integer n : fs) {
+            if (n == 0) {
+                fd.add(n);
+                continue;
+            }
+            if (n % 3 == 0)
+                f3.add(n);
+            if (n % 2 == 0)
+                f2.add(n);
+            if ((n % 2 != 0) && (n % 3 != 0))
+                fd.add(n);
         }
+        printList(f3);
+        printList(f2);
+        printList(fd);
     }
+
+    private static void printList(List<Integer> list) {
+        for (Integer aList : list) System.out.println(aList);
+    }
+}
