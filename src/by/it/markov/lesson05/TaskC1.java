@@ -34,10 +34,7 @@ public class TaskC1 {
 
 }
 */
-/*
-import java.util.ArrayList;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -54,18 +51,17 @@ import java.util.Scanner;
                 i++;
             }
 
-            for (Integer x : fs) {
-                Integer n = fs.get(x);
+            for (Integer n : fs) {
                 if (n == 0){
-                    fd.add(fs.get(x));
+                    fd.add(n);
                     continue;
                 }
                 if (n % 3 == 0)
-                    f3.add(fs.get(x));
+                    f3.add(n);
                 if (n % 2 == 0)
-                    f2.add(fs.get(x));
+                    f2.add(n);
                 if ((n % 2 != 0) && (n % 3 != 0))
-                    fd.add(fs.get(x));
+                    fd.add(n);
             }
             printList(f3);
             printList(f2);
@@ -75,8 +71,4 @@ import java.util.Scanner;
         private static void printList(List<Integer> list) {
             for (Integer aList : list) System.out.println(aList);
         }
-
-
     }
-
-*/
