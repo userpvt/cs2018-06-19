@@ -1,6 +1,5 @@
 package by.it._tasks_.lesson02;
 
-
 import org.junit.Test;
 
 import java.io.*;
