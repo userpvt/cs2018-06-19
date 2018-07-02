@@ -1,82 +1,60 @@
-package by.it._tasks_.lesson02;
-
+package by.it.kleban.lesson05;
 
 import org.junit.Test;
 
 import java.io.*;
 import java.lang.reflect.Method;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
-@SuppressWarnings("all")
+@SuppressWarnings("all") //море warnings. всех прячем.
 
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
-public class Testing02 {
+public class Testing05 {
 
-
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskA1() throws Exception {
-        run("").include("Hello world!");
+        run("1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n").
+                include("0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n");
+        run("1\n-2\n3\n4\n5\n666\n7\n8\n9\n0\n").
+                include("0\n9\n8\n7\n666\n5\n4\n3\n-2\n1\n");
     }
 
-    @Test(timeout = 1500)
+
+    @Test(timeout = 2500)
     public void testTaskA2() throws Exception {
-        run("").include(
-                "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n"
-        );
+        run("ONE\nTWO\nTHREE\nFOUR\nFIVE\nEND\n").include("[ONE, TWO, THREE, FOUR, FIVE]");
+        run("ONE\nEND\n").include("[ONE]");
     }
 
-    @Test(timeout = 1500)
-    public void testTaskA3() throws Exception {
-        run("").include("3*3+4*4=25");
-    }
-
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskB1() throws Exception {
-        run("7").include("49");
+        String[] lines=run("").stringWriter.toString().split("\n");
+        assertTrue("Неверный размер",lines.length==6 && lines[0].trim().equals("5"));
     }
 
-    @Test(timeout = 1500)
+
+    @Test(timeout = 2500)
     public void testTaskB2() throws Exception {
-        run("").include("20");
+        run("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n22\n33\n44\n55\n66\n77\n88\n99\n0")
+                .include("a=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n" +
+                        "b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]\n");
     }
 
-    @Test(timeout = 1500)
-    public void testTaskB3() throws Exception {
-        run("").include("C Новым Годом");
-    }
 
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskC1() throws Exception {
-        run("7\n3\n").include("Sum = 10\n");
+        run("1\n2\n3\n4\n5\n6\n7\n8\n9\n44\n55\n11\n11\n12\n14\n12\n45\n38\n88\n77").
+                include("3\n6\n9\n12\n12\n45\n2\n4\n6\n8\n44\n12\n14\n12\n38\n88\n1\n5\n7\n55\n11\n11\n77");
     }
 
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskC2() throws Exception {
-        run("34\n26\n").include(
-                "DEC:34+26=60\n" +
-                        "BIN:100010+11010=111100\n" +
-                        "HEX:22+1a=3c\n" +
-                        "OCT:42+32=74\n");
+        run("1\n-2\n3\n4\n5\n666\n7\n8\n9\n0\n1\n-1\n3\n4\n5\n665\n7\n8\n9\n0\n").
+                include("666\n665\n9\n9\n8\n8\n7\n7\n5\n5\n4\n4\n3\n3\n1\n1\n0\n0\n-1\n-2");
     }
 
-    @Test(timeout = 1500)
-
-    public void testTaskC3() throws Exception {
-        run("75\n").include("29.51\n");
-        Testing02 t = run("100\n").include("39.35\n");
-        try {
-            Method m = t.aClass.getDeclaredMethod("getWeight", int.class);
-            assertEquals((Double) m.invoke(null, 100), 39.35, 1e-100);
-            assertEquals((Double) m.invoke(null, 75), 29.51, 1e-100);
-        } catch (NoSuchMethodException e) {
-            org.junit.Assert.fail("Метод getWeight не найден");
-        }
-    }
 
     /*
     ===========================================================================================================
@@ -84,40 +62,9 @@ public class Testing02 {
     Но изучить как он работает - можно, это всегда будет полезно.
     ===========================================================================================================
      */
-
-    private Class findClass(String SimpleName) {
-        String full = this.getClass().getName();
-        String dogPath = full.replace(this.getClass().getSimpleName(), SimpleName);
-        try {
-            return Class.forName(dogPath);
-        } catch (ClassNotFoundException e) {
-            fail("\nТест не пройден. Класс " + SimpleName + " не найден.");
-        }
-        return null;
-    }
-
-    private Method findMethod(Class<?> cl, String name, Class... param) {
-        try {
-            return cl.getDeclaredMethod(name, param);
-        } catch (NoSuchMethodException e) {
-            fail("\nТест не пройден. Метод " + cl.getName() + "." + name + " не найден");
-        }
-        return null;
-    }
-
-    private Object invoke(Method method, Object o, Object... value) {
-        try {
-            return method.invoke(o, value);
-        } catch (Exception e) {
-            fail("\nНе удалось вызвать метод " + method.getName());
-        }
-        return null;
-    }
-
-
     //метод находит и создает класс для тестирования
     //по имени вызывающего его метода, testTaskA1 будет работать с TaskA1
-    private static Testing02 run(String in) {
+    private static Testing05 run(String in) {
         Throwable t = new Throwable();
         StackTraceElement trace[] = t.getStackTrace();
         StackTraceElement element;
@@ -134,10 +81,10 @@ public class Testing02 {
         System.out.println("\n---------------------------------------------");
         System.out.println("Старт теста для " + clName + "\ninput:" + in);
         System.out.println("---------------------------------------------");
-        return new Testing02(clName, in);
+        return new Testing05(clName, in);
     }
 
-    public Testing02() {
+    public Testing05() {
         //Конструктор тестов
     }
 
@@ -145,16 +92,13 @@ public class Testing02 {
     //    private Testing(String className) {
     //        this(className, "");
     //    }
-    private String className;
-    Class<?> aClass;
-    //Основной конструктор тестов
-    private Testing02(String className, String in) {
-        //this.className = className;
-        aClass = null;
-        try {
-            aClass = Class.forName(className);
-            this.className = className;
 
+    //Основной конструктор тестов
+    private Testing05(String className, String in) {
+        //this.className = className;
+        Class<?> c = null;
+        try {
+            c = Class.forName(className);
         } catch (ClassNotFoundException e) {
             fail("Не найден класс " + className);
         }
@@ -170,7 +114,7 @@ public class Testing02 {
         System.setOut(newOut); //перехват стандартного вывода
         try {
             Class[] argTypes = new Class[]{String[].class};
-            Method main = aClass.getDeclaredMethod("main", argTypes);
+            Method main = c.getDeclaredMethod("main", argTypes);
             main.invoke(null, (Object) new String[]{});
 
         } catch (Exception x) {
@@ -180,18 +124,18 @@ public class Testing02 {
     }
 
     //проверка вывода
-    private Testing02 is(String str) {
+    private Testing05 is(String str) {
         assertTrue("Ожидается такой вывод:\n<---начало---->\n" + str + "<---конец--->",
                 stringWriter.toString().equals(str));
         return this;
     }
 
-    private Testing02 include(String str) {
+    private Testing05 include(String str) {
         assertTrue("Строка не найдена: " + str + "\n", stringWriter.toString().contains(str));
         return this;
     }
 
-    private Testing02 exclude(String str) {
+    private Testing05 exclude(String str) {
         assertTrue("Лишние данные в выводе: " + str + "\n", !stringWriter.toString().contains(str));
         return this;
     }
@@ -233,4 +177,5 @@ public class Testing02 {
             }
         });
     }
+
 }

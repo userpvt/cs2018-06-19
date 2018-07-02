@@ -1,5 +1,4 @@
-package by.it._tasks_.lesson02;
-
+package by.it.kleban.lesson02;
 
 import org.junit.Test;
 
@@ -57,7 +56,7 @@ public class Testing02 {
 
     @Test(timeout = 1500)
     public void testTaskC2() throws Exception {
-        run("34\n26\n").include(
+                run("34\n26\n").include(
                 "DEC:34+26=60\n" +
                         "BIN:100010+11010=111100\n" +
                         "HEX:22+1a=3c\n" +
@@ -147,7 +146,7 @@ public class Testing02 {
     //    }
     private String className;
     Class<?> aClass;
-    //Основной конструктор тестов
+    //Основной конструктор тестовlesson04
     private Testing02(String className, String in) {
         //this.className = className;
         aClass = null;
